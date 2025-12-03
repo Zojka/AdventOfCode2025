@@ -8,7 +8,6 @@ def read_input(infile: str) -> IDS:
         ids = [(int(a.split("-")[0]), int(a.split("-")[1])) for a in f.readline().strip().split(",")]
     return ids
 
-ids = read_input(infile="./day2/test_data_day2.txt")
 
 def run_control(ids: IDS) -> int:
     invalid = []
@@ -38,5 +37,5 @@ def find_all_dividers(number: int):
         i += 1
     return dividers
 
-
+ids = read_input(infile="./day2/test_data_day2.txt")
 print(sum(run_control(ids)))
