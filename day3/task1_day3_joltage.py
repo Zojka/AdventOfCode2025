@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from typing import List, Tuple
-import heapq
 
 
 def read_input(infile: str) -> List[List[int]]:
