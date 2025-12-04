@@ -26,7 +26,6 @@ def find_max(joltage: List[List[int]]) -> int:
             if ind == 0:
                 ind = len(bank)
             temp_fragment = bank[curr_index + 1:ind]
-            print(temp_fragment)
             temp_index = temp_fragment.index(max(temp_fragment))
             curr_index = curr_index + temp_index + 1
             numb = bank[curr_index]
